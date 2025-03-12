@@ -187,65 +187,67 @@ ul li a:hover {
   padding: 10px 20px; /* Agrega algo de espacio interno en los botones */
 }
 
-/*habilidades*/
+/*HABILIDADES*/
 
-/* Estilos para el contenedor principal de las habilidades */
 .habilidades {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  
 }
 
-/* Título de la sección de habilidades */
-.cards-h h1 {
-  text-align: center; /* Centra el título */
+
+/* Título de la sección */
+.cards-h {
   font-size: 2rem;
-  margin-bottom: 20px; /* Espacio debajo del título */
+  text-align: center;
+  
 }
 
-/* Estilos para el contenedor del grid */
+/* Contenedor de tarjetas con grid */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
-  gap: 20px; /* Espacio entre las tarjetas */
-  width: 100%;
-  justify-items: center; /* Centra las tarjetas en cada columna */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 40%;
+  margin: 40px auto;
+
 }
 
 /* Estilos para cada tarjeta */
 .card {
-  text-align: center; /* Centra el contenido dentro de la tarjeta */
+  display: flex; /* Para que el contenido se alinee correctamente */
+  flex-direction: column;
+  align-items: center;
   background-color: #9C27B0;
-  border-radius: 10px; /* Bordes redondeados */
+  border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 150px; /* Máximo tamaño de cada tarjeta */
+  max-width: 150px;
+  gap: 10px;
 }
 
-/* Estilos para las imágenes */
+/* Estilos para las imágenes dentro de las tarjetas */
 .card img {
   width: 100%;
-  max-width: 100px; /* Máximo tamaño de las imágenes */
-  height: auto; /* Mantiene la proporción de la imagen */
-  margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 15px;
 }
 
 /* Estilos para el texto dentro de cada tarjeta */
 .card p {
   font-size: 1rem;
-  color: #333; /* Color del texto */
-  
+  color: #333;
+  text-align: center;
 }
 
 
 /*CONTACTO*/
-/* Estilo para la sección de contacto */
+
 .contacto {
+  
   padding: 40px;
   background: linear-gradient(to right, #9C27B0, #5E92D1);
   text-align: center;
@@ -446,7 +448,7 @@ button:hover {
   .presentacion .texto {
     display: block; /* Cambia a bloque para asegurar que ocupe todo el ancho disponible */
     text-align: center; /* Centra el texto */
-    font-size: 30px; /* Ajusta el tamaño de la fuente */
+    font-size: 18px; /* Ajusta el tamaño de la fuente */
     margin-right: 0; /* Elimina el margen a la derecha */
     margin-left: 0; /* Asegura que no haya margen a la izquierda */
     text-align: justify;
@@ -489,3 +491,15 @@ button:hover {
 
 
 /* Media query para pantallas con un ancho de 1197px */
+
+/*HABILIDADES*/
+
+@media (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Solo una columna */
+    max-width: 100%; /* Asegura que ocupe el ancho completo disponible */
+    margin: 20px auto; /* Ajusta el margen si es necesario */
+    justify-items: center; /* Centra las tarjetas horizontalmente */
+    align-items: center; /* Centra las tarjetas verticalmente */
+  }
+}
