@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto'sans-serif;
+    color: white;
+    background-color: black;
+
+
+
+}
+
+.container-principal{
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 10px;
+  background: linear-gradient(to right, #9C27B0, #5E92D1);
+  
+}
+
+p{
+   color: white;
+}
+
+
+h1,
+h2{
+  color: black !important;
+  margin-top: 20px;
+}
+
+.navegacion{
+  display: flex; /* Cambiar a flex para alinear todo en una fila */
+  justify-content: space-between; /* Espacio entre los elementos */
+  align-items: center; /* Alinear elementos verticalmente */
+  width: 90%;
+  margin-top: 40px;
+}
+
+.hola h1 {
+  margin: 0;
+  font-size: 2em;
+  padding-left: 50px;
+  margin-top: 20px;
+}
+.B-Nav ul {
+  display: flex;
+  flex-direction: row; /* Los elementos siguen en fila en pantallas grandes */
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  margin-top: 20px;
+  justify-content: center; 
+  
+}
+
+
+/*ESTILOS DE LINKS */
+
+ul li a {
+  text-decoration: none;
+  color: black; 
+  font-weight: bold;
+}
+
+ul li a:hover {
+  color: #AEEEEE; /* Cambia el color al pasar el mouse */
+}
+
+/*PRESENTACION*/
+
+.presentacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 150px auto;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+    
+}
+
+
+.presentacion .foto{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+}
+
+.presentacion .foto img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+.presentacion .texto{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 40px;
+  text-align: justify;
+  margin-right: 100px;
+}
+
+
+
+/*PROYECTOS*/
+.Proyectos {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  width: 100%; 
+  max-width: 100%; 
+  margin: 0 auto; 
+  padding: 20px; 
+}
+
+
+/* Estilo del contenedor del título */
+.card-P {
+  width: 100%; 
+  max-width: 1500px; 
+  margin: 0 auto; 
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+/* Estilo para el título h1 */
+.card-P h1 {
+  font-size: 2rem; 
+  color: #333; 
+  margin: 0; 
+}
+
+
+/* Estilos para el contenedor de las cards (PROYECTOS) */
+
+.grid-container-1 {
+  display: grid; /* Usar grid para la distribución */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Crear columnas automáticas con un ancho mínimo de 250px */
+  gap: 20px; /* Espacio entre tarjetas */
+  justify-items: center; /* Centra las cards dentro del contenedor */
+  align-items: stretch; /* Las tarjetas se estiran para que tengan la misma altura */
+  height: 100%; /* Asegura que ocupe todo el alto disponible del contenedor */
+}
+
+/* Estilos para cada card dentro del grid */
+.card1 {
+  background-color: #AEEEEE; /* Fondo blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espacio interno de cada card */
+  text-align: center; /* Centra el texto dentro de las cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  display: flex; /* Hace que el contenido de la tarjeta sea flexible */
+  flex-direction: column; /* Coloca los elementos verticalmente */
+  justify-content: flex-start; /* Alinea el contenido al principio */
+  width: 100%;
+  max-width: 300px; /* Ancho máximo de cada card */
+  height: auto; /* Deja que la altura se ajuste */
+}
+
+/* Estilos para las imágenes dentro de las cards */
+.card1 img {
+  width: 100%; /* Las imágenes ocupan todo el ancho de la card */
+  height: auto; /* Ajuste automático de la altura */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
+/* Estilo para los párrafos dentro de las cards */
+.card1 p {
+  font-size: 1rem; /* Tamaño del texto */
+  margin-bottom: 15px; /* Espacio debajo del texto */
+  color: black;
+  text-align: justify;
+}
+
+/* Estilo para los botones dentro de las cards */
+.card1 button {
+  margin-top: auto; /* Empuja los botones hacia el final de la tarjeta */
+  display: block; /* Hace que el botón sea un bloque */
+  width: fit-content; /* Ajusta el ancho del botón al contenido */
+  margin-left: auto; /* Centra el botón horizontalmente */
+  margin-right: auto; /* Centra el botón horizontalmente */
+  padding: 10px 20px; /* Agrega algo de espacio interno en los botones */
+}
+
+/*habilidades*/
+
+/* Estilos para el contenedor principal de las habilidades */
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Título de la sección de habilidades */
+.cards-h h1 {
+  text-align: center; /* Centra el título */
+  font-size: 2rem;
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilos para el contenedor del grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  gap: 20px; /* Espacio entre las tarjetas */
+  width: 100%;
+  justify-items: center; /* Centra las tarjetas en cada columna */
+}
+
+/* Estilos para cada tarjeta */
+.card {
+  text-align: center; /* Centra el contenido dentro de la tarjeta */
+  background-color: #9C27B0;
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  width: 100%;
+  max-width: 150px; /* Máximo tamaño de cada tarjeta */
+}
+
+/* Estilos para las imágenes */
+.card img {
+  width: 100%;
+  max-width: 100px; /* Máximo tamaño de las imágenes */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos para el texto dentro de cada tarjeta */
+.card p {
+  font-size: 1rem;
+  color: #333; /* Color del texto */
+  
+}
+
+
+/*CONTACTO*/
+/* Estilo para la sección de contacto */
+.contacto {
+  padding: 40px;
+  background: linear-gradient(to right, #9C27B0, #5E92D1);
+  text-align: center;
+}
+
+/* Estilo para el título */
+.contacto h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Contenedor del formulario */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #5E92D1;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los grupos de entrada */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Estilos para los campos de entrada */
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Efecto al enfocar los campos */
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #5c9ded;
+  outline: none;
+}
+
+/* Estilos para el botón de enviar */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #5c9ded;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4a8edc;
+}
+
+/* Estilo para el área de texto */
+textarea {
+  resize: vertical;
+}
+
+
+/*ESTILOS PARA BOTON*/
+
+/* Estilo para el contenedor de los botones */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Espacio entre los botones */
+  
+}
+
+/* Estilo para el botón "Enviar" */
+button {
+  width: 48%; /* Hace que el botón ocupe la mitad del espacio */
+  padding: 12px;
+  background-color: #5c9ded;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4a8edc;
+}
+
+/* Estilo para el botón "Wasap" */
+.wasap-btn {
+  background-color: #25d366; /* Color típico de WhatsApp */
+  border: none;
+  color: white;
+}
+
+.wasap-btn:hover {
+  background-color: #128c7e; /* Color cuando se pasa el ratón */
+}
+
+/*FOOTER*/
+
+.footer {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+/*ANIMACION PARA HOLA*/
+
+@keyframes vibrarSuave {
+  0% { transform: translate(0); }
+  25% { transform: translate(1px, -1px); }
+  50% { transform: translate(-1px, 1px); }
+  75% { transform: translate(1px, 1px); }
+  100% { transform: translate(0); }
+}
+
+.hola h1 {
+  font-size: 2rem;
+  display: inline-block;
+  animation: vibrarSuave 0.3s infinite ease-in-out; /* Suaviza la vibración */
+}
+
+
+/*MEDIA QERYS*/
+
+/* 📱 Media query para móviles */
+@media (max-width: 1000px) {
+  .navegacion {
+    width: 100%; /* Hace que el contenedor ocupe todo el ancho en pantallas pequeñas */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: center; /* Centra todo horizontalmente */
+    justify-content: center; /* Centra todo verticalmente */
+    text-align: center; /* Asegura que el texto esté centrado */
+  }
+
+  .hola h1 {
+    margin: 0;
+    font-size: 2em;
+    padding: 0; /* Elimina cualquier padding que pueda estar desplazando el título */
+    line-height: 1.2; 
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  .B-Nav ul {
+    display: flex;
+    flex-direction: column; /* Los elementos se apilan en columna */
+    align-items: center; /* Centra los elementos de la lista */
+    list-style: none;
+    gap: 10px; /* Ajusta el espacio entre los enlaces */
+    margin-top: 0;
+  }
+
+  /* ESTILOS DE LINKS */
+  ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  ul li a:hover {
+    color: #AEEEEE; /* Cambia el color al pasar el mouse */
+  }
+}
+
+
+/*PRESENTACION*/
+
+@media (max-width: 1000px) {
+  .presentacion {
+    grid-template-columns: 1fr; /* Solo una columna */
+    text-align: center; /* Centra todo el texto */
+    margin: 20px auto; /* Ajusta el margen para que no esté tan alejado de los bordes */
+    width: 100%;
+  }
+
+  .presentacion .foto {
+    display: none; /* Oculta la imagen */
+  }
+
+  .presentacion .texto {
+    display: block; /* Cambia a bloque para asegurar que ocupe todo el ancho disponible */
+    text-align: center; /* Centra el texto */
+    font-size: 30px; /* Ajusta el tamaño de la fuente */
+    margin-right: 0; /* Elimina el margen a la derecha */
+    margin-left: 0; /* Asegura que no haya margen a la izquierda */
+    text-align: justify;
+    padding: 20px;
+  }
+}
+
+
+
+/*PROYECTOS*/
+
+/* Media query para pantallas con un ancho máximo de 1000px */
+@media (max-width: 1000px) {
+  .grid-container-1 {
+    grid-template-columns: 1fr; /* Solo una columna */
+  }
+
+  /* Estilos para las cards en el layout de una sola columna */
+  .card1 {
+    max-width: 100%; /* La tarjeta se adapta al ancho del contenedor */
+    height: auto; /* Ajusta la altura de las tarjetas */
+  }
+}
+
+
+/* Para pantallas grandes */
+@media (min-width: 1200px) {
+  .grid-container-1 {
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
+  }
+
+  .presentacion {
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+  }
+
+  .navegacion {
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+  }
+}
+
+
+/* Media query para pantallas con un ancho de 1197px */
